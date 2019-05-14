@@ -38,11 +38,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in
-              Detroit.
+              Created by <strong>{author}</strong> who lives and works in
+              Detroit as a software consultant.&nbsp;
               {` `}
               <a href={`https://instagram.com/${social.instagram}`}>
-                You could follow me on instagram
+                You can follow me on instagram.
               </a>
             </p>
           </div>

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Navigation from "../components/navigation"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -56,11 +57,12 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(30),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <header>{header}</header>
+        <Navigation />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

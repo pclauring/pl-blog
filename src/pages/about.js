@@ -5,35 +5,38 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-class SketchbookPage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const linkedin = data.site.siteMetadata.social.linkedin
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Sketchbook"
-          keywords={[`sketch`, `drawing`, `template`, `art`]}
+          keywords={[`bio`, `c#`, `javascript`, `react`, `redux`, `gatsby`]}
         />
         <Bio />
-        <h3>Sketchbook</h3>
-        <p>
-          Posting my latest <strong>drawings</strong>. Hopefully this will keep
-          me honest about drawing more & sharing.
-        </p>
+        <h3>About Me</h3>
+        You can find my professional history{" "}
+        <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
+        <p />
       </Layout>
     )
   }
 }
 
-export default SketchbookPage
+export default AboutPage
 
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
         title
+        social {
+          linkedin
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

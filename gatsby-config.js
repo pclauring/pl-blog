@@ -7,6 +7,7 @@ module.exports = {
     social: {
       twitter: `pclauring`,
       instagram: `piercelauring`,
+      linkedin: `pierce-lauring`,
     },
   },
   plugins: [

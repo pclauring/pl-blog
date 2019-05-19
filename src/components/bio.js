@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -39,11 +39,13 @@ function Bio() {
             />
             <p>
               Created by <strong>{author}</strong> who lives and works in
-              Detroit as a software consultant.&nbsp;
-              {` `}
+              Detroit as a software consultant. A blog site for his latest art
+              projects and tech interests.{" "}
+              <Link to="/about">More about him.</Link>
+              {/* {` `}
               <a href={`https://instagram.com/${social.instagram}`}>
                 You can follow me on instagram.
-              </a>
+              </a>{" "} */}
             </p>
           </div>
         )

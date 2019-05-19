@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -17,8 +16,7 @@ class AboutPage extends React.Component {
           title="Sketchbook"
           keywords={[`bio`, `c#`, `javascript`, `react`, `redux`, `gatsby`]}
         />
-        <Bio />
-        <h3>About Me</h3>
+        <h3>About Pierce</h3>
         You can find my professional history{" "}
         <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
         <p />

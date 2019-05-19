@@ -5,7 +5,7 @@ module.exports = {
     description: `A blog to talk about art and tech projects`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `pclauring`,
+      github: `pclauring`,
       instagram: `piercelauring`,
       linkedin: `pierce-lauring`,
     },

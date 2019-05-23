@@ -8,6 +8,7 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
+import Header from "../components/header"
 
 import { rhythm } from "../utils/typography"
 
@@ -24,7 +25,8 @@ function Bio() {
               marginBottom: rhythm(2.5),
             }}
           >
-            <Image
+            <Header />
+            {/* <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
@@ -36,7 +38,7 @@ function Bio() {
               imgStyle={{
                 borderRadius: `50%`,
               }}
-            />
+            /> */}
             <p>
               Created by <strong>{author}</strong> who lives and works in
               Detroit as a software consultant. A blog site for his latest art

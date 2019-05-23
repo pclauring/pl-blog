@@ -2,6 +2,7 @@
 title: Old Boar God
 date: "2019-05-21T19:23:03.284Z"
 description: "Princess Mononoke long time Ghibli favorite of mine. Here is my drawing of the Old Boar God OKKOTO."
+featuredImage: "./old-boar-god.jpg"
 ---
 
 ![Old Boar God](./old-boar-god.jpg)

@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Image from "gatsby-image"
 
 class BlogIndex extends React.Component {
   render() {
@@ -32,6 +33,15 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
+
+              <Image
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+                style={{
+                  marginRight: rhythm(1 / 2),
+                  marginBottom: 0,
+                  minWidth: 50,
+                }}
+              />
               <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
@@ -66,6 +76,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

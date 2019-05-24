@@ -1,14 +1,6 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import Image from "gatsby-image"
-import Header from "../components/header"
+import logo from "../../content/assets/cat-face.svg"
 
 import { rhythm } from "../utils/typography"
 
@@ -25,7 +17,13 @@ function Bio() {
               marginBottom: rhythm(2.5),
             }}
           >
-            <Header />
+            <div style={{ marginRight: `10px`, marginTop: `-10px` }}>
+              <img
+                src={logo}
+                style={{ width: `75px`, height: `75px` }}
+                alt="cat face"
+              />
+            </div>
             {/* <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}

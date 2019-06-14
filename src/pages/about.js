@@ -19,7 +19,11 @@ class AboutPage extends React.Component {
           title="Sketchbook"
           keywords={[`bio`, `c#`, `javascript`, `react`, `redux`, `gatsby`]}
         />
-        <h3>About Pierce</h3>
+        <h1>About Pierce</h1>
+        <p>
+          You can find my professional history{" "}
+          <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
+        </p>
         <Image
           fixed={data.avatar.childImageSharp.fixed}
           alt={author}
@@ -27,33 +31,39 @@ class AboutPage extends React.Component {
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
             minWidth: 50,
-            borderRadius: `100%`,
+            // borderRadius: `100%`,
           }}
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
+          imgStyle={
+            {
+              // borderRadius: `50%`,
+            }
+          }
         />
-        You can find my professional history{" "}
-        <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
-        <p />
       </Layout>
     )
   }
 }
 
+// childImageSharp {
+//   fixed(width: 50, height: 50) {
+//     ...GatsbyImageSharpFixed
+//   }
+// }
+
 export default AboutPage
 
 export const pageQuery = graphql`
   query {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/bio-image.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 200) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     site {
       siteMetadata {
+        title
         author
         social {
           instagram

@@ -14,16 +14,9 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(1.5),
             }}
           >
-            <div style={{ marginRight: `10px`, marginTop: `-10px` }}>
-              <img
-                src={logo}
-                style={{ width: `75px`, height: `75px` }}
-                alt="cat face"
-              />
-            </div>
             {/* <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -40,13 +33,19 @@ function Bio() {
             <p>
               Created by <strong>{author}</strong> who lives and works in
               Detroit as a software consultant. A blog site for his latest art
-              projects and tech interests.{" "}
-              <Link to="/about">More about him.</Link>
+              projects and interests. <Link to="/about">More about him.</Link>
               {/* {` `}
               <a href={`https://instagram.com/${social.instagram}`}>
                 You can follow me on instagram.
               </a>{" "} */}
             </p>
+            <div style={{ marginRight: `10px`, marginTop: `-10px` }}>
+              <img
+                src={logo}
+                style={{ width: `75px`, height: `75px` }}
+                alt="cat face"
+              />
+            </div>
           </div>
         )
       }}

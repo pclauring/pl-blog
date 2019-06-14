@@ -20,25 +20,27 @@ class AboutPage extends React.Component {
           keywords={[`bio`, `c#`, `javascript`, `react`, `redux`, `gatsby`]}
         />
         <h1>About Pierce</h1>
-        <p>
-          You can find my professional history{" "}
-          <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
-        </p>
-        <Image
-          fixed={data.avatar.childImageSharp.fixed}
-          alt={author}
+        <div
           style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            minWidth: 50,
-            // borderRadius: `100%`,
+            display: `flex`,
+            marginBottom: rhythm(1.5),
           }}
-          imgStyle={
-            {
-              // borderRadius: `50%`,
-            }
-          }
-        />
+        >
+          <Image
+            fixed={data.avatar.childImageSharp.fixed}
+            alt={author}
+            style={{
+              marginRight: rhythm(1 / 2),
+              marginBottom: 0,
+              minWidth: 50,
+            }}
+            imgStyle={{}}
+          />
+          <p>
+            You can find my professional history{" "}
+            <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
+          </p>
+        </div>
       </Layout>
     )
   }
@@ -54,9 +56,9 @@ export default AboutPage
 
 export const pageQuery = graphql`
   query {
-    avatar: file(absolutePath: { regex: "/bio-image.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/about-headshot.jpg/" }) {
       childImageSharp {
-        fixed(width: 200) {
+        fixed(width: 100) {
           ...GatsbyImageSharpFixed
         }
       }

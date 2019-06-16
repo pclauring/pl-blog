@@ -17,6 +17,13 @@ function Bio() {
               marginBottom: rhythm(1.5),
             }}
           >
+            <div style={{ marginRight: `10px`, marginTop: `-10px` }}>
+              <img
+                src={logo}
+                style={{ width: `75px`, height: `75px` }}
+                alt="cat face"
+              />
+            </div>
             {/* <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -39,13 +46,6 @@ function Bio() {
                 You can follow me on instagram.
               </a>{" "} */}
             </p>
-            <div style={{ marginRight: `10px`, marginTop: `-10px` }}>
-              <img
-                src={logo}
-                style={{ width: `75px`, height: `75px` }}
-                alt="cat face"
-              />
-            </div>
           </div>
         )
       }}

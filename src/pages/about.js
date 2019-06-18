@@ -11,7 +11,6 @@ class AboutPage extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const author = data.site.siteMetadata.author
-    const { linkedin } = data.site.siteMetadata.social
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -41,21 +40,13 @@ class AboutPage extends React.Component {
             eventually other things I have been working on. I graduated
             University of Michigan Ann Arbor with a BS in Biology. My interests
             include drawing, painting, rowing <strong>(erging)</strong>,
-            3D-Printing and programming. If you are looking for work experience
-            you can find my professional history{" "}
-            <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
+            3D-Printing and programming.
           </p>
         </div>
       </Layout>
     )
   }
 }
-
-// childImageSharp {
-//   fixed(width: 50, height: 50) {
-//     ...GatsbyImageSharpFixed
-//   }
-// }
 
 export default AboutPage
 
@@ -74,7 +65,6 @@ export const pageQuery = graphql`
         author
         social {
           instagram
-          linkedin
         }
       }
     }

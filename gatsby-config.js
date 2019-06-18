@@ -63,7 +63,7 @@ module.exports = {
         short_name: `plblog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `content/assets/cat-face.svg`,
       },

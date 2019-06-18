@@ -37,7 +37,12 @@ class AboutPage extends React.Component {
             imgStyle={{}}
           />
           <p>
-            You can find my professional history{" "}
+            I created this blog as a way to share my sketchbook project and
+            eventually other things I have been working on. I graduated
+            University of Michigan Ann Arbor with a BS in Biology. My interests
+            include drawing, painting, rowing <strong>(erging)</strong>,
+            3D-Printing and programming. If you are looking for work experience
+            you can find my professional history{" "}
             <a href={`https://linkedin.com/in/${linkedin}`}>here</a>.
           </p>
         </div>
@@ -58,7 +63,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/about-headshot.jpg/" }) {
       childImageSharp {
-        fixed(width: 100) {
+        fixed(height: 100) {
           ...GatsbyImageSharpFixed
         }
       }

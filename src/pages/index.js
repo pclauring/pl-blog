@@ -42,17 +42,20 @@ class BlogIndex extends React.Component {
               </h3>
               <div>
                 <div>
-                  <Image
-                    fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-                    style={{
-                      marginRight: rhythm(1 / 2),
-                      marginBottom: 0,
-                      minWidth: 50,
-                      height: `100px`,
-                    }}
-                    alt="Preview Image"
-                  />
-
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    <Image
+                      fluid={
+                        node.frontmatter.featuredImage.childImageSharp.fluid
+                      }
+                      style={{
+                        marginRight: rhythm(1 / 2),
+                        marginBottom: 0,
+                        minWidth: 50,
+                        height: `100px`,
+                      }}
+                      alt="Preview Image"
+                    />
+                  </Link>
                   <small>{node.frontmatter.date}</small>
                 </div>
                 <div>

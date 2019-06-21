@@ -16,9 +16,18 @@ class AboutPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Sketchbook"
-          keywords={[`bio`, `c#`, `javascript`, `react`, `redux`, `gatsby`]}
+          keywords={[
+            `bio`,
+            `c#`,
+            `javascript`,
+            `react`,
+            `redux`,
+            `gatsby`,
+            `drawing`,
+            `programming`,
+          ]}
         />
-        <h1>About Pierce</h1>
+        <h1>About {author}</h1>
         <div
           style={{
             display: `flex`,
@@ -36,10 +45,10 @@ class AboutPage extends React.Component {
             imgStyle={{}}
           />
           <p>
-            I created this blog as a way to share my sketchbook project and
-            eventually other things I have been working on. I graduated
+            I created this blog as a way to share my sketchbook progress and
+            eventually other projects I have been working on. I graduated
             University of Michigan Ann Arbor with a BS in Biology. My interests
-            include drawing, painting, rowing <strong>(erging)</strong>,
+            include cats, drawing, painting, rowing <strong>(erging)</strong>,
             3D-Printing and programming.
           </p>
         </div>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `PL Projects`,
+    title: `PL Sketchblog`,
     author: `Pierce Lauring`,
     description: `A blog to talk about art and tech projects`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `PL Blog`,
+        name: `PL Sketchblog`,
         short_name: `plblog`,
         start_url: `/`,
         background_color: `#ffffff`,

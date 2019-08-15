@@ -1,7 +1,7 @@
 ---
 title: Jungle Cat
 date: "2019-06-20T14:09:55.214Z"
-description: "A jungle cat with a mane of tropical leaves"
+description: "A jungle cat with a mane of tropical leaves."
 featuredImage: "./jungle-cat.jpg"
 ---
 

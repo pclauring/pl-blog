@@ -1,7 +1,7 @@
 ---
 title: Necromancer?
 date: "2019-07-22T09:43:00.000Z"
-description: "Necromancer/Witch Doctor looking to raise some dead friends"
+description: "Necromancer/Witch Doctor looking to raise some dead friends."
 featuredImage: "./necromancer-preview.jpg"
 ---
 

@@ -9,8 +9,11 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
-
-    if (location.pathname === rootPath) {
+    if (
+      location.pathname === rootPath ||
+      //If the path is an integer is a blog post list page
+      Number.isInteger(parseInt(location.pathname.replace("/", "")))
+    ) {
       header = (
         <h1
           style={{

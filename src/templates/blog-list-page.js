@@ -26,7 +26,8 @@ class BlogIndex extends React.Component {
             `blog`,
             `gatsby`,
             `javascript`,
-            `react``sketch`,
+            `react`,
+            `sketch`,
             `drawing`,
           ]}
         />

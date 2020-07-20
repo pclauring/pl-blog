@@ -2,7 +2,7 @@
 title: Druid Archer
 date: "2020-04-24T11:26:03.284Z"
 description: "Druid Archer Concept Art"
-featuredImage: "./archer-banner.png"
+featuredImage: "./archer-preview.png"
 ---
 
 ![Archer](./archer.png)

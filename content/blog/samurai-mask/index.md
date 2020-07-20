@@ -7,4 +7,4 @@ featuredImage: "./samurai-mask-preview.jpg"
 
 ![Samurai Mask](./samurai-mask.jpg)
 
-Samurai mask concept. Pencil underdrawing finished with various micropens.
+Samurai mask concept. Pencil underdrawing finished with various micronpens.

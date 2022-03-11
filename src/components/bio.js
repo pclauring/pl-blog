@@ -38,9 +38,9 @@ function Bio() {
               }}
             /> */}
             <p>
-              Created by <strong>{author}</strong> who lives and works in
-              Detroit as a software consultant. A blog site for his latest art
-              projects and interests. <Link to="/about">More about him.</Link>
+              Created by <strong>{author}</strong> who lives and works in San
+              Francisco as a software consultant. A blog site for his latest art
+              projects. <Link to="/about">More about him.</Link>
               {/* {` `}
               <a href={`https://instagram.com/${social.instagram}`}>
                 You can follow me on instagram.

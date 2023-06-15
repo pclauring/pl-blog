@@ -1,5 +1,5 @@
 ---
-title: Gracy Kelly
+title: Grace Kelly
 date: "2022-01-17T10:40:00.000Z"
 description: "B&W Portait of Grace Kelly"
 featuredImage: "./Grace-Kelly.jpg"
